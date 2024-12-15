@@ -1,42 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fullscreen Tabs</title>
     <link rel="stylesheet" href="style.css">
-    
-
 </head>
 <body>
-  
-    <div id="London" class="tabcontent">
-        <h1>London</h1>
-        <p>London is the capital city of England.</p>
-      </div>
-      
-      <div id="Paris" class="tabcontent">
-        <h1>Paris</h1>
-        <p>Paris is the capital of France.</p>
-      </div>
-      
-      <div id="Tokyo" class="tabcontent">
-        <h1>Tokyo</h1>
-        <p>Tokyo is the capital of Japan.</p>
-      </div>
-      
-      <div id="Oslo" class="tabcontent">
-        <h1>Oslo</h1>
-        <p>Oslo is the capital of Norway.</p>
-      </div>
-      
-      <button class="tablink" onclick="openCity('London', this, 'red')" id="defaultOpen">London</button>
-      <button class="tablink" onclick="openCity('Paris', this, 'green')">Paris</button>
-      <button class="tablink" onclick="openCity('Tokyo', this, 'blue')">Tokyo</button>
-      <button class="tablink" onclick="openCity('Oslo', this, 'orange')">Oslo</button>
 
-    
-      <script src="scripts.js"></script>
+
+    <!-- Contenido de las pestañas -->
+    <div id="Home" class="tabcontent">
+        <h1 style="display:none;">Home</h1> <!-- Oculta texto, si lo deseas -->
+    </div>
+
+    <div id="About" class="tabcontent">
+        <h1 style="display:none;">About</h1>
+    </div>
+
+    <div id="Contact" class="tabcontent">
+        <h1 style="display:none;">Contact</h1>
+    </div>
+
+    <!-- Botones de navegación -->
+    <div class="tabcontainer">
+        <button class="tablink" onclick="openCity('Home', this, '#f8b936')" id="defaultOpen">Home</button>
+        <button class="tablink" onclick="openCity('About', this, '#dc8c18')">About</button>
+        <button class="tablink" onclick="openCity('Contact', this, '#9f4409')">Contact</button>
+    </div>
+
+
+
+
+
+
+    <h2>PORTFOLIO</h2>
+    <p>Resize the browser window to see the responsive effect.</p>
+
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+    <div class="column">
+        <div class="content">
+        <img src="mountains.jpg" alt="Mountains" style="width:100%">
+        <h3>My Work</h3>
+        <p>Lorem ipsum..</p>
+        </div>
+    </div>
+    <div class="column">
+        <div class="content">
+        <img src="lights.jpg" alt="Lights" style="width:100%">
+        <h3>My Work</h3>
+        <p>Lorem ipsum..</p>
+        </div>
+    </div>
+    <div class="column">
+        <div class="content">
+        <img src="nature.jpg" alt="Nature" style="width:100%">
+        <h3>My Work</h3>
+        <p>Lorem ipsum..</p>
+        </div>
+    </div>
+    <div class="column">
+        <div class="content">
+        <img src="mountains.jpg" alt="Mountains" style="width:100%">
+        <h3>My Work</h3>
+        <p>Lorem ipsum..</p>
+        </div>
+    </div>
+    </div>
+
+    <div class="content">
+    <img src="bear.jpg" alt="Bear" style="width:100%">
+    <h3>Some Other Work</h3>
+    <p>Lorem ipsum..</p>
+    </div>
+
+    <!-- END MAIN -->
+    </div>
+
+
+
+
+
+    <script src="scripts.js"></script>
 </body>
 </html>
