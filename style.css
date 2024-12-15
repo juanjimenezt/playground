@@ -10,7 +10,7 @@ body, html {
 .tabcontent {
     display: flex; /* Utilizamos flexbox */
     flex-direction: column; /* Alinea los elementos de arriba hacia abajo */
-    width: 100vw; /* Ocupa toda la anchura de la pantalla */
+    width: 100%; /* Ocupa toda la anchura de la pantalla */
     background-size: cover; /* La imagen cubre toda el área del fondo */
     background-position: center; /* Centra la imagen del fondo */
     height: 400px; /* Altura definida para las imágenes */
@@ -126,3 +126,58 @@ body, html {
     }
   }
 
+
+
+
+  /* Seccion Interactiva con JS */
+
+  /* Asegurar que ocupe todo el ancho horizontal */
+#contador-vocales.full-width {
+    width: 100%; /* Ocupa el 100% del ancho */
+    padding: 20px;
+    background-color: #f8b936; /* Fondo llamativo */
+    color: white; /* Texto en blanco */
+    text-align: center;
+    box-sizing: border-box; /* Incluir padding en el ancho total */
+}
+
+/* Estilos internos del texto y botones */
+#contador-vocales.full-width h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#contador-vocales.full-width p {
+    margin-bottom: 15px;
+}
+
+#contador-vocales.full-width input {
+    width: 80%; /* Ocupa el 80% del ancho para evitar que toque los bordes */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#contador-vocales.full-width button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#contador-vocales.full-width button:hover {
+    background-color: #e0e0e0;
+}
+
+#contador-vocales.full-width #resultado {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
