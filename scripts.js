@@ -23,6 +23,7 @@ document.getElementById("defaultOpen").click();
 
 
 
+
 function contar() {
     const texto = document.getElementById("texto").value; // Obtener el texto del input
     const vocales = "aeiouáéíóúAEIOUÁÉÍÓÚ";
